@@ -50,6 +50,8 @@ Route::get('/usuarios/listado/', [UsuarioController::class,'index'])->name('usua
 Route::get('/usuarios/add', [UsuarioController::class,'add'])->name('usuario.add');
 //guarda
 Route::post('/usuarios/', [UsuarioController::class,'save'])->name('usuario.save');
+//--- ruta para el pdf
+Route::get('/usuarios/imprimirdompdf', [UsuarioController::class,'imprimirpdf'])->name('usuario.imprimirdompdf');
 //-- editar
 Route::get('usuarios/{usuario}/edit', [UsuarioController::class, 'edit'])->name('usuario.edit');
 //---- llama el update

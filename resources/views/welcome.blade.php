@@ -31,7 +31,7 @@
                             <li><a class="dropdown-item" href="{{route('usuario.index')}}">usuarios</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="{{route('usuario.imprimirdompdf')}}">Listado en pdf</a></li>
                         </ul>
                         </li>
                         <li class="nav-item">

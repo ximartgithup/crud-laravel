@@ -78,6 +78,14 @@ class UsuarioController extends Controller
         Session::flash('ok', 'Registro Actualizado');
         return redirect()->route('usuario.index');
     }
+
+    //----------- para imprimir con la libreria DomPDF
+    public function imprimirpdf()
+    {
+        $usuarios = Usuario::all();
+        $pdf = \PDF::loadView('usuarios.imprimirpdf',compact('usuarios'));
+        return $pdf->download('imprimir.pdf');
+    }
     
 
 }
